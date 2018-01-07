@@ -4,7 +4,7 @@
 <!-- 3. footer: be middle-aligned, distance to the upper element is 20 pixels  -->
 <!-- 4. person name: set italic using CSS -->
 <!-- 5. how to open link: open link in the iframe -->
-<!-- 6. person profile: change "Your name" to your REAL name; add the link of your profile in Github -->
+<!-- 6. person profile: change "Your name" to your REAL name; add the link of your profile in Github yes-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,6 +29,19 @@
             .header li > a:hover {
                 background-color: #111111;
             }
+            .footer {
+                text-align: center;
+                margin-top: 20px;
+            }
+            li {
+                float: left;
+            }
+            ul {
+                overflow: auto;
+            }
+            .person {
+                font-style: italic;
+            }
         </style>
     </head>
     <body>
@@ -38,7 +51,7 @@
             <li><a href="https://map.baidu.com/">Map</a></li>
             <li><a href="https://news.baidu.com/">News</a></li>
         </ul>
-        <iframe src="https://www.baidu.com" class="main" name="iframe"></iframe>
+        <iframe src="https://www.baidu.com" class="main" name="iframe" width="100%" height="400"></iframe>
         <div class="footer">
             <p>Created by:
                 <span class="person" title="Github Profile">
@@ -49,8 +62,8 @@
             </p>
             <p>Modified by:
                 <span class="person" title="Github Profile">
-                    <a href="https://github.com">
-                        Your name
+                    <a href="https://github.com/LAGETOU" target="_blank">
+                        Yuchen zhao
                     </a>
                 </span>
             </p>
