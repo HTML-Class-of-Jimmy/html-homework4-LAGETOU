@@ -1,0 +1,59 @@
+<!-- 0. USING CSS within <style> tag ALL THE WAY; NO INLINE CSS STYLE IS ALLOWED! -->
+<!-- 1. header: add horizontal header to this web page -->
+<!-- 2. main iframe: set the width and height - width is same as the length of web page, height is about 400 pixels -->
+<!-- 3. footer: be middle-aligned, distance to the upper element is 20 pixels  -->
+<!-- 4. person name: set italic using CSS -->
+<!-- 5. how to open link: open link in the iframe -->
+<!-- 6. person profile: change "Your name" to your REAL name; add the link of your profile in Github -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baidu Wrapper Page</title>
+        <style>
+            * {
+                margin:0;
+                padding:0;
+            }
+            .header {
+                background-color: #333333;
+            }
+
+            .header li > a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+
+            .header li > a:hover {
+                background-color: #111111;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="header">
+            <li><a href="https://www.baidu.com/">Home</a></li>
+            <li><a href="https://tieba.baidu.com/index.html">Tieba</a></li>
+            <li><a href="https://map.baidu.com/">Map</a></li>
+            <li><a href="https://news.baidu.com/">News</a></li>
+        </ul>
+        <iframe src="https://www.baidu.com" class="main" name="iframe"></iframe>
+        <div class="footer">
+            <p>Created by:
+                <span class="person" title="Github Profile">
+                    <a href="https://github.com/jimmyahacker">
+                        Jimmy
+                    </a>
+                </span>
+            </p>
+            <p>Modified by:
+                <span class="person" title="Github Profile">
+                    <a href="https://github.com">
+                        Your name
+                    </a>
+                </span>
+            </p>
+        </div>
+    </body>
+</html>
